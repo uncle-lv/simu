@@ -16,7 +16,7 @@ class TypeException(Exception):
 
 
 def boolean() -> bool:
-    return bool(random.getrandbits(1))
+    return random.getrandbits(1) == 1
 
 def booleans(size: int = DEFAULT_SIZE) -> List[bool]:
     if size < 1:
