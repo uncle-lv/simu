@@ -13,9 +13,9 @@
 #### 常量（constant）
 
 ```python
-DEFAULT_MAX = 1 << 12       // 默认最大值
-DEFAULT_MIN = -DEFAULT_MAX  // 默然最小值
-DEFAULT_SIZE = 10           // 默认列表长度
+DEFAULT_MAX = 1 << 12       # 默认最大值
+DEFAULT_MIN = -DEFAULT_MAX  # 默然最小值
+DEFAULT_SIZE = 10           # 默认列表长度
 ```
 
 
@@ -30,11 +30,15 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 ##### simu.random.*booleans(size: int = DEFAULT_SIZE)*
 
-返回一个随机布尔值
+返回一个随机布尔值列表
 
 
 
-**size**：可选参数，表示列表长度。默认值为 10
+参数列表：
+
+| 参数 |   描述   | 默认值 |        可选        |
+| :--: | :------: | :----: | :----------------: |
+| size | 列表长度 |   10   | :heavy_check_mark: |
 
 
 
@@ -46,9 +50,12 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 0
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
+| 参数 |   描述   | 默认值 |        可选        |
+| :--: | :------: | :----: | :----------------: |
+| min  | 取值下限 |   0    | :heavy_check_mark: |
+| max  | 取值上限 |  4096  | :heavy_check_mark: |
 
 
 
@@ -58,11 +65,13 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 0
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
-
-**size**：可选参数，表示列表长度。默认值为 10
+| 参数 |   描述   | 默认值 |        可选        |
+| :--: | :------: | :----: | :----------------: |
+| min  | 取值下限 |   0    | :heavy_check_mark: |
+| max  | 取值上限 |  4096  | :heavy_check_mark: |
+| size | 列表长度 |   10   | :heavy_check_mark: |
 
 
 
@@ -74,9 +83,12 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 -4096
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
+| 参数 |   描述   | 默认值 |        可选        |
+| :--: | :------: | :----: | :----------------: |
+| min  | 取值下限 | -4096  | :heavy_check_mark: |
+| max  | 取值上限 |  4096  | :heavy_check_mark: |
 
 
 
@@ -86,11 +98,13 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 -4096
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
-
-**size**：可选参数，表示列表长度。默认值为 10
+| 参数 |   描述   | 默认值 |        可选        |
+| :--: | :------: | :----: | :----------------: |
+| min  | 取值下限 | -4096  | :heavy_check_mark: |
+| max  | 取值上限 |  4096  | :heavy_check_mark: |
+| size | 列表长度 |   10   | :heavy_check_mark: |
 
 
 
@@ -102,11 +116,13 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 -4096
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
-
-**n**：可选参数，表示保留到小数点后 *n* 位（四舍五入）。默认值为 2
+|  参数   |               描述                | 默认值 |        可选        |
+| :-----: | :-------------------------------: | :----: | :----------------: |
+|   min   |             取值下限              | -4096  | :heavy_check_mark: |
+|   max   |             取值上限              |  4096  | :heavy_check_mark: |
+| ndigits | 保留到小数点后 *n* 位（四舍五入） |   2    | :heavy_check_mark: |
 
 
 
@@ -116,13 +132,14 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**min**：可选参数，表示取值下限。默认值为 -4096
+参数列表：
 
-**max**：可选参数，表示取值上限。默认值为 4096
-
-**n**：可选参数，表示保留到小数点后 *n* 位（四舍五入）。默认值为 2
-
-**size**：可选参数，表示列表长度。默认值为 10
+|  参数   |               描述                | 默认值 |        可选        |
+| :-----: | :-------------------------------: | :----: | :----------------: |
+|   min   |             取值下限              | -4096  | :heavy_check_mark: |
+|   max   |             取值上限              |  4096  | :heavy_check_mark: |
+| ndigits | 保留到小数点后 *n* 位（四舍五入） |   2    | :heavy_check_mark: |
+|  size   |             列表长度              |   10   | :heavy_check_mark: |
 
 
 
@@ -134,7 +151,11 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**pool**：可选参数，表示字符池，将从中选择一个字符返回。默认值为 *[string.ascii_letters](https://docs.python.org/3/library/string.html?highlight=ascii_letter#string.ascii_letters)*
+参数列表：
+
+| 参数 |  描述  |                            默认值                            |        可选        |
+| :--: | :----: | :----------------------------------------------------------: | :----------------: |
+| pool | 字符池 | *[string.ascii_letters](https://docs.python.org/3/library/string.html?highlight=ascii_letter#string.ascii_letters)* | :heavy_check_mark: |
 
 
 
@@ -146,8 +167,11 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-**pool**：可选参数，表示字符池，将从中选择一个字符返回。默认值为 *[string.ascii_letters](https://docs.python.org/3/library/string.html?highlight=ascii_letter#string.ascii_letters)*
+参数列表：
 
-**min**：可选参数，表示字符串长度下限。默认值为 3
+| 参数 |      描述      |                            默认值                            |        可选        |
+| :--: | :------------: | :----------------------------------------------------------: | :----------------: |
+| pool |     字符池     | *[string.ascii_letters](https://docs.python.org/3/library/string.html?highlight=ascii_letter#string.ascii_letters)* | :heavy_check_mark: |
+| min  | 字符串长度下限 |                              3                               | :heavy_check_mark: |
+| max  | 字符串长度上限 |                              10                              | :heavy_check_mark: |
 
-**max**：可选参数，表示字符串长度上限。默认值为 10
