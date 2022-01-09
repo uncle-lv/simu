@@ -106,6 +106,8 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 **max**：可选参数，表示取值上限。默认值为 4096
 
+**n**：可选参数，表示保留到小数点后 *n* 位（四舍五入）。默认值为 2
+
 
 
 ##### mock.rand.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
@@ -117,6 +119,8 @@ DEFAULT_SIZE = 10           // 默认列表长度
 **min**：可选参数，表示取值下限。默认值为 -4096
 
 **max**：可选参数，表示取值上限。默认值为 4096
+
+**n**：可选参数，表示保留到小数点后 *n* 位（四舍五入）。默认值为 2
 
 **size**：可选参数，表示列表长度。默认值为 10
 
