@@ -53,6 +53,18 @@ def integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT
         integers.append(integer(min, max))
     return integers
 
+def floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2) -> float:
+    return round(random.uniform(min, max), ndigits)
+
+def floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE) -> List[float]:
+    if size < 1:
+        raise ValueException('the size of a list must be at least 1')
+    
+    floatings = []
+    for _ in range(0, size):
+        floatings.append(floating(min, max, ndigits))
+    return floatings
+
 def char(pool: str = string.ascii_letters) -> str:
     if not isinstance(pool, str):
         raise TypeException('pool value must be str, not \'{}\''.format(type(pool)))
