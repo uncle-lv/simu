@@ -6,6 +6,16 @@
 
 
 
+## 安装
+
+请确保你电脑安装了 Python 环境和 pip
+
+```bash
+$ pip install simu
+```
+
+
+
 ## 使用说明
 
 ### 随机数（random）
@@ -22,13 +32,13 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 布尔值（boolean）
 
-##### simu.random.*boolean()*
+##### random.*boolean()*
 
 返回一个随机布尔值
 
 
 
-##### simu.random.*booleans(size: int = DEFAULT_SIZE)*
+##### random.*booleans(size: int = DEFAULT_SIZE)*
 
 返回一个随机布尔值列表
 
@@ -44,7 +54,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 自然数（natural number）
 
-##### simu.random.*natural(min: int = 0, max: int = DEFAULT_MAX)*
+##### random.*natural(min: int = 0, max: int = DEFAULT_MAX)*
 
 返回一个随机自然数
 
@@ -59,7 +69,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 
 
-##### simu.random.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### random.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 返回一个随机自然数列表
 
@@ -77,7 +87,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 整数（integer）
 
-##### simu.random.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
+##### random.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
 
 返回一个随机整数
 
@@ -92,7 +102,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 
 
-##### simu.random.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### random.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 返回一个随机整数列表
 
@@ -110,7 +120,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 浮点数（floating number）
 
-##### simu.random.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
+##### random.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
 
 返回一个随机浮点数
 
@@ -126,7 +136,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 
 
-##### simu.random.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
+##### random.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
 
 返回一个随机浮点数列表
 
@@ -145,7 +155,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 字符（character）
 
-##### simu.random.*char(pool: str = string.ascii_letters)*
+##### random.*char(pool: str = string.ascii_letters)*
 
 从字符池中返回一个字符
 
@@ -161,7 +171,7 @@ DEFAULT_SIZE = 10           # 默认列表长度
 
 #### 字符串（string）
 
-##### simu.random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
+##### random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
 
 返回一个由字符池中的字符随机组成的字符串
 
