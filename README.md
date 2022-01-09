@@ -6,6 +6,16 @@ A simulation data generator
 
 
 
+## Install
+
+Please ensure you have installed Python and pip on your personal computer.
+
+```bash
+$ pip install simu
+```
+
+
+
 ### Usage
 
 ### Random
@@ -22,13 +32,13 @@ DEFAULT_SIZE = 10           # the default length of list
 
 #### Boolean
 
-##### simu.random.*boolean()*
+##### random.*boolean()*
 
 return a random boolean value
 
 
 
-##### simu.random.*booleans(size: int = DEFAULT_SIZE)*
+##### random.*booleans(size: int = DEFAULT_SIZE)*
 
 return a list of random boolean values
 
@@ -44,7 +54,7 @@ parameter list:
 
 #### Natural number
 
-##### simu.random.*natural(min: int = 0, max: int = DEFAULT_MAX)*
+##### random.*natural(min: int = 0, max: int = DEFAULT_MAX)*
 
 return a random natural number
 
@@ -59,7 +69,7 @@ parameter list:
 
 
 
-##### simu.random.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### random.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 return a list of natural numbers
 
@@ -77,7 +87,7 @@ parameter list:
 
 #### Integer
 
-##### simu.random.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
+##### random.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
 
 return a random integer
 
@@ -110,7 +120,7 @@ parameter list:
 
 #### Floating number
 
-##### simu.random.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
+##### random.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
 
 return a random floating number
 
@@ -126,7 +136,7 @@ parameter list:
 
 
 
-##### simu.random.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
+##### random.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
 
 return a list of random floating numbers
 
@@ -145,7 +155,7 @@ parameter list:
 
 #### Character
 
-##### simu.random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
+##### random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
 
 return a random character from the character pool
 
@@ -161,7 +171,7 @@ parameter list:
 
 #### String
 
-##### simu.random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
+##### random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
 
 return a string which consists of the characters from the character pool
 
