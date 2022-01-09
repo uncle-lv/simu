@@ -1,8 +1,8 @@
-# mock
+# simu
 
-![license](https://img.shields.io/github/license/uncle-lv/mock) ![stars](https://img.shields.io/github/stars/uncle-lv/mock) ![issues](https://img.shields.io/github/issues/uncle-lv/mock) ![forks](https://img.shields.io/github/forks/uncle-lv/mock) ![python version](https://img.shields.io/badge/python-3.7.0-blue)
+![license](https://img.shields.io/github/license/uncle-lv/simu) ![stars](https://img.shields.io/github/stars/uncle-lv/simu) ![issues](https://img.shields.io/github/issues/uncle-lv/simu) ![forks](https://img.shields.io/github/forks/uncle-lv/simu) ![python version](https://img.shields.io/badge/python-3.7.0-blue)
 
-一个模拟数据生成库
+一个模拟数据生成器
 
 
 
@@ -22,13 +22,13 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 布尔值（boolean）
 
-##### mock.rand.*boolean()*
+##### simu.random.*boolean()*
 
 返回一个随机布尔值
 
 
 
-##### mock.rand.*booleans(size: int = DEFAULT_SIZE)*
+##### simu.random.*booleans(size: int = DEFAULT_SIZE)*
 
 返回一个随机布尔值
 
@@ -40,7 +40,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 自然数（natural number）
 
-##### mock.rand.*natural(min: int = 0, max: int = DEFAULT_MAX)*
+##### simu.random.*natural(min: int = 0, max: int = DEFAULT_MAX)*
 
 返回一个随机自然数
 
@@ -52,7 +52,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-##### mock.rand.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### simu.random.*naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 返回一个随机自然数列表
 
@@ -68,7 +68,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 整数（integer）
 
-##### mock.rand.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
+##### simu.random.*integer(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX)*
 
 返回一个随机整数
 
@@ -80,7 +80,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-##### mock.rand.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### simu.random.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 返回一个随机整数列表
 
@@ -96,7 +96,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 浮点数（floating number）
 
-##### mock.rand.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
+##### simu.random.*floating(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2)*
 
 返回一个随机浮点数
 
@@ -110,7 +110,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 
 
-##### mock.rand.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
+##### simu.random.*floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int = 2, size: int = DEFAULT_SIZE)*
 
 返回一个随机浮点数列表
 
@@ -128,7 +128,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 字符（character）
 
-##### mock.rand.*char(pool: str = string.ascii_letters)*
+##### simu.random.*char(pool: str = string.ascii_letters)*
 
 从字符池中返回一个字符
 
@@ -140,7 +140,7 @@ DEFAULT_SIZE = 10           // 默认列表长度
 
 #### 字符串（string）
 
-##### mock.rand.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
+##### simu.random.*string(pool: str = string.ascii_letters, min: int = 3, max: int = 10)*
 
 返回一个由字符池中的字符随机组成的字符串
 
