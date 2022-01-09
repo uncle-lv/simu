@@ -23,7 +23,7 @@ def booleans(size: int = DEFAULT_SIZE) -> List[bool]:
         raise ValueException('the size of a list must be at least 1')
     
     bools = []
-    for _ in range(0, size):
+    for _ in range(size):
         bools.append(boolean())
     return bools
     
@@ -37,7 +37,7 @@ def naturals(min: int = 0, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE) -> 
         raise ValueException('the size of a list must be at least 1')
     
     naturals = []
-    for _ in range(0, size):
+    for _ in range(size):
         naturals.append(natural(min, max))
     return naturals
 
@@ -49,7 +49,7 @@ def integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT
         raise ValueException('the size of a list must be at least 1')
     
     integers = []
-    for _ in range(0, size):
+    for _ in range(size):
         integers.append(integer(min, max))
     return integers
 
@@ -61,7 +61,7 @@ def floatings(min: float = DEFAULT_MIN, max: float = DEFAULT_MAX, ndigits: int =
         raise ValueException('the size of a list must be at least 1')
     
     floatings = []
-    for _ in range(0, size):
+    for _ in range(size):
         floatings.append(floating(min, max, ndigits))
     return floatings
 
