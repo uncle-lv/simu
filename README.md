@@ -102,7 +102,7 @@ parameter list:
 
 
 
-##### simu.random.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
+##### random.*integers(min: int = DEFAULT_MIN, max: int = DEFAULT_MAX, size: int = DEFAULT_SIZE)*
 
 return a list of random integers
 
